@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SPTouch Version Production Epsilon</title>
+  <meta name="author" content="Csongor Kocsis">
+  <meta name="description" content="This is a digital signage solution for the University of Southampton, Science Park">
+  <meta name="keywords" content="digital signage, signage, marketing, touchscreen, screen">
+  <link rel="stylesheet" href="reset.css" type="text/css">
+  <link rel="stylesheet" href="main.css" type="text/css">
+  <link rel="stylesheet" href="font.css" type="text/css">
+  <link rel="stylesheet" href=" ajax-ld-main.css" type="text/css">
+  <link rel="stylesheet" href="assets/css/materialize.css" type="text/css">
+  <link rel="stylesheet" href="assets/css/bus.css" type="text/css">
+  <link rel="stylesheet" href="assets/css/card.css" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+  <script src="assets/js/materialize.js"></script>
+  <script defer src="assets/js/fontawesome-all.js"></script>
+  <script src="assets/js/ajax-load.js"></script>
+  <script src="assets/js/bus.js"></script>
+</head>
+<body onload="startTime()">
+  <div class="container">
+    <!-- Page Content goes here -->
+    <div class="row equal-col">
+      <div class="col s6 logo__container">
+        <div class="logo"></div>
+      </div>
+      <div class="col s6 align-col-right">
+        <div class="time__container">
+          <div class="time__clock" id="time"></div>
+          <div class="time__date" id="date"></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="menubar">
+        <div class="col s12 menu-col">
+          <i class="fa fa-home fa-5x" aria-hidden="true" id="home"></i>
+          <div class="menu-btn" >Home</div>
+        </div>
+        <div class="col s12 menu-col">
+          <i class="fa fa-users fa-5x" aria-hidden="true" id="meetings"></i>
+          <div class="menu-btn" >Meetings</div>
+        </div>
+        <div class="col s12 menu-col">
+          <i class="fa fa-bus fa-5x" aria-hidden="true" id="transport"></i>
+          <div class="menu-btn" >Transport</div>
+        </div>
+
+        <div class="col s12 menu-col">
+          <i class="fa fa-info-circle fa-5x" aria-hidden="true" id="info"></i>
+          <div class="menu-btn" >Info</div>
+        </div>
+      </div>
+    </div>
+    <div style="clear: both;"></div>
+    <div id="bodyContainer">
+      <div class="row">
+        <div class="row_title">
+          <p>COMPANIES</p>
+        </div>
+        <div class="searchbar">
+          <div class="col s12">
+            <button class="fil-cat search-btn blue waves-effect waves-light" id="btn-a-g">A - G</button>
+          </div>
+          <div class="col s12">
+            <button class="fil-cat search-btn blue waves-effect waves-light" id="btn-h-n">H - N</button>
+          </div>
+          <div class="col s12">
+            <button class="fil-cat search-btn blue waves-effect waves-light" id="btn-o-t">O - T</button>
+          </div>
+          <div class="col s12">
+            <button class="fil-cat search-btn blue waves-effect waves-light" id="btn-u-z">U - Z</button>
+          </div>
+          <div class="col s12">
+            <button class="fil-cat search-btn blue waves-effect waves-light" id="btn-0-9">0 - 9</button>
+          </div>
+        </div>
+      </div>
+      <div style="clear: both;"></div>
+      <div class="row ajx-ld-content" id="ajaxContainer">
+        <div class="cat-container">
+          <div class="tile col col-comp cat-a-g grow-appear" id="aap3">
+            <p>AAP3</p>
+          </div>
+
+          <div class="tile col col-comp cat-a-g grow-appear" id="aareon">
+            <p>Aareon</p>
+          </div>
+
+          <div class="tile col col-comp cat-a-g grow-appear" id="acceler">
+            <p>Acceler Comm</p>
+          </div>
+
+          <div class="tile col col-comp cat-a-g grow-appear" id="active">
+            <p>Active Space Technologies</p>
+          </div>
+
+          <div class="tile col col-comp cat-a-g grow-appear" id="altitude">
+            <p>Altitude Partners LLP</p>
+          </div>
+
+          <div class="tile col col-comp cat-a-g grow-appear" id="amodisc">
+            <p>AmoDisc</p>
+          </div>
+          <div class="tile col col-comp cat-a-g grow-appear" id="archaeovision">
+            <p>Archaeovision UK Services</p>
+          </div>
+
+          <div class="tile col col-comp cat-a-g grow-appear" id="arkaya">
+            <p>Arkaya</p>
+          </div>
+
+          <div class="tile col col-comp cat-a-g grow-appear" id="ascend">
+            <p>Ascend Technologies</p>
+          </div>
+
+          <div class="tile col col-comp cat-a-g grow-appear" id="ascribe">
+            <p>Ascribe</p>
+          </div>
+
+          <div class="tile col col-comp cat-a-g grow-appear" id="atelier">
+            <p>Atelier</p>
+          </div>
+
+          <div class="tile col col-comp cat-a-g grow-appear" id="ats">
+            <p>ATS</p>
+          </div>
+
+          <div class="tile col col-comp cat-a-g grow-appear" id="avonglen">
+            <p>Avonglen</p>
+          </div>
+
+          <div class="tile col col-comp cat-a-g grow-appear" id="bemanagement">
+            <p>B E Management</p>
+          </div>
+
+          <div class="tile col col-comp cat-a-g grow-appear" id="betomorrow">
+            <p>BeTomorrow UK</p>
+          </div>
+
+          <div class="tile col col-comp cat-a-g grow-appear" id="blackspider">
+            <p>Black Spider Consulting</p>
+          </div>
+
+          <div class="tile col col-comp cat-a-g grow-appear" id="bluepoint">
+            <p>BluePoint</p>
+          </div>
+
+          <div class="tile col col-comp cat-a-g grow-appear" id="blutek">
+            <p>BluTek</p>
+          </div>
+
+          <div class="tile col col-comp cat-a-g grow-appear" id="carequest">
+            <p>Care Quest</p>
+          </div>
+          <div class="tile col col-comp cat-a-g grow-appear" id="cascoda">
+            <p>Cascoda</p>
+          </div>
+
+          <div class="tile col col-comp cat-a-g grow-appear" id="chillworthpart">
+            <p>Chilworth Partnership</p>
+          </div>
+
+          <div class="tile col col-comp cat-a-g grow-appear" id="chillworthtech">
+            <p>Chilworth Technology Limited</p>
+          </div>
+
+          <div class="tile col col-comp cat-a-g grow-appear" id="chinesetrans">
+            <p>Chinese Technical Translations</p>
+          </div>
+          
+          <div class="tile col col-comp cat-a-g grow-appear" id="cobaltotter">
+            <p>CobaltOtter</p>
+          </div>
+
+          <div class="tile col col-comp cat-a-g grow-appear" id="cloudbee">
+            <p>Cloudbee's</p>
+          </div>
+
+          <div class="tile col col-comp cat-a-g grow-appear" id="consultshannon">
+            <p>Consult Shannon</p>
+          </div>
+
+          <div class="tile col col-comp cat-a-g grow-appear" id="critical">
+            <p>Critical Software Technologies</p>
+          </div>
+
+          <div class="tile col col-comp cat-a-g grow-appear" id="echovista">
+            <p>Echovista</p>
+          </div>
+
+          <div class="tile col col-comp cat-a-g grow-appear" id="englyst">
+            <p>Englyst Carbohydrates</p>
+          </div>
+
+          <div class="tile col col-comp cat-a-g grow-appear" id="fibercode">
+            <p>Fibercode</p>
+          </div>
+
+          <div class="tile col col-comp cat-a-g grow-appear" id="fidelity">
+            <p>Fidelity Technologies</p>
+          </div>
+
+          <div class="tile col col-comp cat-a-g grow-appear" id="filament">
+            <p>Filament</p>
+          </div>
+          <div class="tile col col-comp cat-a-g grow-appear" id="forti5">
+            <p>Forti5 Technologies</p>
+          </div>
+
+          <div class="tile col col-comp cat-a-g grow-appear" id="fox">
+            <p>Fox Whitfield</p>
+          </div>
+
+          <div class="tile col col-comp cat-a-g grow-appear" id="fresh">
+            <p>Fresh Relevance</p>
+          </div>
+
+          <div class="tile col col-comp cat-a-g grow-appear" id="grant">
+            <p>Grant Thornton</p>
+          </div>
+
+          <div class="tile col col-comp cat-a-g grow-appear" id="gresham">
+            <p>Gresham Technologies</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!--Import jQuery before materialize.js-->
+
+
+  <script src="assets/js/clock.js"></script>
+</body>
+</html>
