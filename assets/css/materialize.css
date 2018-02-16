@@ -4738,7 +4738,7 @@ video.responsive-video {
   }
 
   .card .card-title {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 300;
   }
 
@@ -4756,7 +4756,7 @@ video.responsive-video {
   }
 
   .card.small .card-image + .card-content, .card.medium .card-image + .card-content, .card.large .card-image + .card-content {
-    max-height: 40%;
+    max-height: 25%;
   }
 
   .card.small .card-content, .card.medium .card-content, .card.large .card-content {
@@ -4772,7 +4772,7 @@ video.responsive-video {
   }
 
   .card.small {
-    height: 220px;
+    max-height: 250px;
   }
 
   .card.medium {
@@ -4868,7 +4868,7 @@ video.responsive-video {
   }
 
   .card .card-content {
-    padding: 24px;
+    padding: 16px;
     border-radius: 0 0 2px 2px;
     background-color: #fff;
   }

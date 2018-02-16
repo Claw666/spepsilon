@@ -1,3 +1,8 @@
+$(document).ready(function(){
+  $(document).bind("contextmenu",function(e){
+    return false;
+  });
+});
 
 $(document).on("click", '#home', function(event) { 
   $('#bodyContainer').load('home.html');
@@ -49,10 +54,4 @@ $(document).on("click", '.cat-u-z', function(event) {
 });
 $(document).on("click", '.cat-0-9', function(event) { 
       $('#ajaxContainer').load('assets/companies/'+ $(this).attr('id')+'.html');
-});
-
-//DEBUG
-$(document).on("click", '#ajaxContainer', function(event) { 
-  var id=$(this).attr('id');
-  console.log("ID:"+id);
 });

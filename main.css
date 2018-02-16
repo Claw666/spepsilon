@@ -45,12 +45,12 @@ body {
 }
 
 .time__clock {
-  font-size: 8vw;
+  font-size: 6vw;
   font-weight: 200;
 }
 
 .time__date {
-  font-size: 1.9vw;
+  font-size: 1.3vw;
 }
 
 .equal-col {
@@ -76,7 +76,7 @@ body {
   left: auto;
   right: auto;
   text-align: center;
-  height: 80px !important;
+  height: 60px !important;
 }
 
 .comp-info {
@@ -131,11 +131,11 @@ body {
 }
 
 .menu-col svg{
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   padding: 20px;
   border-radius: 15px;
-  width: 100px !important;
-  height: 100px;
+  width: 90px !important;
+  height: 90px;
   border: 1px solid white;
 }
 .comp-btn {
@@ -148,9 +148,7 @@ body {
   column-count: 5;
 }
 
-.searchbar .col {
-  min-height: 64px !important;
-}
+
 
 .menubar {
   column-count: 4;
@@ -277,9 +275,45 @@ body {
   to   { transform: scale(1); }
 }
 
+
+.growshow {
+  -webkit-animation: growshow 2s ease-out;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation: growshow 2s ease-out;
+  -moz-animation-iteration-count: infinite;
+  -ms-animation: growshow 2s ease-out;
+  -ms-animation-iteration-count: infinite;
+  animation: growshow 2s ease-out;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes growshow {
+  from { transform: height(24); }
+  to   { transform: height(27); }
+}
+
+@-moz-keyframes growshow {
+  from { transform: height(24); }
+  to   { transform: height(27); }
+}
+
+@-ms-keyframes growshow {
+  from { transform: height(24); }
+  to   { transform: height(27); }
+}
+
+@keyframes growshow {
+  from { transform: height(24); }
+  to   { transform: height(27); }
+}
+
 .cat-container {
   width: -webkit-fill-available;
-  height: -webkit-fill-available;
+  min-height: 325px;
+}
+
+.home_cont {
+  min-height: 325px;
 }
 
 .row_title {
@@ -289,5 +323,16 @@ body {
 }
 
 .emb_rm_booking {
-  height: 150vh;
+  height: 100vw;
+  width: 200%;
+  transform: scale(0.5);
+  transform-origin: 0 0;
+}
+
+.kiosk-title {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  font-size: 40px;
 }
